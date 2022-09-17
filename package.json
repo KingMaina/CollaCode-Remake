@@ -1,18 +1,20 @@
 {
   "name": "api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Collacode web application backend API; MVC architecture is used. Created with NodeJS, ExpresJS, MongoDB for the database",
   "private": true,
   "type": "module",
+  "main": "./src/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon --watch src src/index.mjs"
   },
-  "author": "",
+  "author": "Andrew Maina",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.0",
     "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
     "express": "^4.18.1",
     "mongoose": "^6.6.0",
     "morgan": "^1.10.0"
