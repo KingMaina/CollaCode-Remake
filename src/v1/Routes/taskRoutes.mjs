@@ -1,5 +1,5 @@
 import {Router} from 'express';
-import taskController from '../../Controllers/taskController.mjs';
+import * as taskController from '../../Controllers/taskController.mjs';
 
 const router = Router();
 
@@ -13,5 +13,6 @@ router
 router
 .route('/:id')
 .get(taskController.getOne)
-.put(taskController.updateOne);
+.put(taskController.updateOne)
+.delete(taskController.deleteOne);
 export default router;
