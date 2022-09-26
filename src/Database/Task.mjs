@@ -75,7 +75,7 @@ const createTask = async (taskDetails) => {
       error: {
         status: 'FAILED',
         code: 500,
-        message: `${error?.message || error}`
+        message: error?.message || error
       }
     };
   }
